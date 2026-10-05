@@ -1,0 +1,565 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./gpquadraticexample_files/filelist.xml">
+<link rel=Edit-Time-Data href="./gpquadraticexample_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>gpanimatedtutorial</title>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Normalaftermajorheading, li.Normalaftermajorheading, div.Normalaftermajorheading
+	{mso-style-name:"Normal after major heading";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-line-height-alt:3.0pt;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Enumerate, li.Enumerate, div.Enumerate
+	{mso-style-name:Enumerate;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:.9in;
+	text-align:justify;
+	text-indent:-.3in;
+	mso-line-height-alt:1.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:40.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.SubEnumerate, li.SubEnumerate, div.SubEnumerate
+	{mso-style-name:SubEnumerate;
+	mso-style-parent:Enumerate;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:1.4in;
+	text-align:justify;
+	text-indent:-.3in;
+	mso-line-height-alt:1.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:63.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.SubSubEnumerate, li.SubSubEnumerate, div.SubSubEnumerate
+	{mso-style-name:SubSubEnumerate;
+	mso-style-parent:SubEnumerate;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:1.8in;
+	text-align:justify;
+	text-indent:-27.0pt;
+	mso-line-height-alt:1.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:1.25in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.BelowSomething, li.BelowSomething, div.BelowSomething
+	{mso-style-name:"Below Something";
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-line-height-alt:3.0pt;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.TermFunSet, li.TermFunSet, div.TermFunSet
+	{mso-style-name:"Term\/Fun Set";
+	mso-style-next:"Below Something";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:31.0pt;
+	text-align:justify;
+	text-indent:-32.0pt;
+	mso-line-height-alt:3.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:27.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.FigureTitle, li.FigureTitle, div.FigureTitle
+	{mso-style-name:"Figure Title";
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:.4in;
+	mso-line-height-alt:3.0pt;
+	mso-pagination:widow-orphan;
+	font-size:18.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Courier New";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=Template content="C:\Program Files\Microsoft Office\OFFICE\html.dot">
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'><a name="_Toc31591970"></a><a
+name="_Toc31592753"></a><a name="_Toc32115716"></a><a name="_Toc33062414"></a><a
+name="_Toc33230280"></a><a name="_Toc33587452"></a><a name="_Toc33675377"></a><a
+name="_Toc33841001"></a><a name="_Toc33856857"></a><a name="_Toc34098678"></a><a
+name="_Toc37580544"></a><a name="_Toc37637649"></a><a name="_Toc38697035"></a><a
+name="_Toc38697529"><span style='mso-bookmark:_Toc38697035'><span
+style='mso-bookmark:_Toc37637649'><span style='mso-bookmark:_Toc37580544'><span
+style='mso-bookmark:_Toc34098678'><span style='mso-bookmark:_Toc33856857'><span
+style='mso-bookmark:_Toc33841001'><span style='mso-bookmark:_Toc33675377'><span
+style='mso-bookmark:_Toc33587452'><span style='mso-bookmark:_Toc33230280'><span
+style='mso-bookmark:_Toc33062414'><span style='mso-bookmark:_Toc32115716'><span
+style='mso-bookmark:_Toc31592753'><span style='mso-bookmark:_Toc31591970'>Example
+of a Run of Genetic Programming</span></span></span></span></span></span></span></span></span></span></span></span></span></a></h2>
+
+<h2 align=center style='text-align:center'>(Symbolic Regression of a Quadratic
+Polynomial)</h2>
+
+<p>This page describes an illustrative run of genetic programming in which the
+goal is to automatically create a computer program whose output is equal to the
+values of the quadratic polynomial <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>x</i>+1 in the range from –1 to +1. That is,
+the goal is to automatically create a computer program that matches certain
+numerical data. This process is sometimes called <i>system identification</i>
+or <i>symbolic regression</i>. </p>
+
+<p>We begin with the five preparatory steps for the problem and then proceed to
+the executional steps of the run of genetic programming.</p>
+
+<h2>Preparatory Steps</h2>
+
+<p>The purpose of the first two preparatory steps is to specify the ingredients
+of the to-be-evolved program. </p>
+
+<p>Because the problem is to find a mathematical function of one independent
+variable, the terminal set (inputs to the to-be-evolved program) includes the
+independent variable, <i>x</i>. The terminal set also includes numerical
+constants. That is, the terminal set, <span style='font-family:Arial;
+mso-bidi-font-family:"Times New Roman"'>T</span>, is</p>
+
+<p><span style='font-family:Arial;mso-bidi-font-family:"Times New Roman"'>T</span><sub>
+</sub>= {<span style='font-family:"Courier New"'>X</span>, <span
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&#8476;</span></span>}, </p>
+
+<p>where <span style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>&#8476;</span></span>
+denotes constant numerical terminals in some reasonable range (say from –5.0 to
++5.0). </p>
+
+<p>The preceding statement of the problem is somewhat flexible in that it does
+not specify what functions may be employed in the to-be-evolved program. One
+possible choice for the function set consists of the four ordinary arithmetic
+functions of addition, subtraction, multiplication, and protected division.
+This choice is reasonable because mathematical expressions typically include
+these functions. Thus, the function set, <span style='font-family:Arial;
+mso-bidi-font-family:"Times New Roman"'>F</span>, for this problem is </p>
+
+<p><span style='font-family:Arial;mso-bidi-font-family:"Times New Roman"'>F</span><sub>
+</sub>= {<span style='font-family:"Courier New"'>+</span>, <span
+style='font-family:"Courier New"'>-</span>, <span style='font-family:"Courier New"'>*</span>,
+<span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>%</span>}.
+</p>
+
+<p>The two-argument <span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>+</span>, <span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>-</span>, <span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>*</span>, and <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>%</span> functions add, subtract,
+multiply, and divide, respectively. The protected division function <span
+style='font-family:"Courier New"'>%</span> returns a value of 1 when division
+by 0 is attempted (including 0 divided by 0), but otherwise returns the
+quotient of its two arguments. </p>
+
+<p>Each individual in the population is a composition of functions from the
+specified function set and terminals from the specified terminal set. </p>
+
+<p>The third preparatory step involves constructing the fitness measure. The
+purpose of the fitness measure is to specify what the human wants. The
+high-level goal of this problem is to find a program whose output is equal to
+the values of the quadratic polynomial <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>x</i>+1. Therefore, the fitness assigned to
+a particular individual in the population for this problem must reflect how
+closely the output of an individual program comes to the target polynomial <i
+style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:
+normal'>x</i>+1. The fitness measure could be defined as the value of the
+integral (taken over values of the independent variable <i>x</i> between –1.0
+and +1.0) of the absolute value of the differences (errors) between the value
+of the individual mathematical expression and the target quadratic polynomial <i
+style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:
+normal'>x</i>+1. A smaller value of fitness (error) is better. A fitness
+(error) of zero would indicate a perfect fit. </p>
+
+<p>For most problems of symbolic regression or system identification, it is not
+practical or possible to analytically compute the value of the integral of the
+absolute error. Thus, in practice, the integral is numerically approximated
+using dozens or hundreds of different values of the independent variable <i>x</i>
+in the range between –1.0 and +1.0. </p>
+
+<p>The population size in this small illustrative example will be just four. In
+actual practice, the population size for a run of genetic programming consists
+of thousands or millions of individuals. In actual practice, the crossover
+operation is commonly performed on about 90% of the individuals in the
+population; the reproduction operation is performed on about 8% of the
+population; the mutation operation is performed on about 1% of the population;
+and the architecture-altering operations are performed on perhaps 1% of the
+population. Because this illustrative example involves an abnormally small
+population of only four individuals, the crossover operation will be performed
+on two individuals and the mutation and reproduction operations will each be
+performed on one individual. For simplicity, the architecture-altering
+operations are not used for this problem. </p>
+
+<p>A reasonable termination criterion for this problem is that the run will
+continue from generation to generation until the fitness of some individual
+gets below 0.01. In this contrived example, the run will (atypically) yield an
+algebraically perfect solution (for which the fitness measure attains the ideal
+value of zero) after merely one generation. </p>
+
+<p>Click here for additional information about the <b><a
+href="gppreparatory.html">preparatory steps</a></b> of a run of genetic
+programming. </p>
+
+<h2>Executional Steps</h2>
+
+<p>One the human user has performed the five preparatory steps, the run of
+genetic programming can be launched. That is, the executional steps shown in
+the <b><a href="gpflowchart.html">flowchart of genetic programming</a></b> are
+performed. </p>
+
+<p>Genetic programming starts by randomly creating a population of four
+individual computer programs. The four programs are shown in figure 1 in the
+form of trees. </p>
+
+<p align=center style='text-align:center'><img border=0 width=500 height=159
+id="_x0000_i1041" src=BBB3663gen0.gif></p>
+
+<p><b>Figure 1 Initial population of four randomly created individuals of
+generation 0<o:p></o:p></b></p>
+
+<p align=center style='text-align:center'><img border=0 width=562 height=112
+id="_x0000_i1039" src=BBB3662fitnessarea.gif></p>
+
+<p><b>Figure 2 The fitness of each of the four randomly created individuals of
+generation 0 is equal to the area between two curves<o:p></o:p></b></p>
+
+<p align=center style='text-align:center'><img border=0 width=500 height=189
+id="_x0000_i1052" src=BBB3664gen1.gif></p>
+
+<p><b>Figure 3 Population of generation 1 (after one reproduction, one
+mutation, and one two-offspring crossover operation)<span style='display:none;
+mso-hide:all'> </span><o:p></o:p></b></p>
+
+<p>The first randomly constructed program tree (figure 1<span style='color:
+black'>a)</span> is equivalent<b> </b>to the mathematical expression <i
+style='mso-bidi-font-style:normal'>x</i>+1. A program tree is executed in a depth-first
+way, from left to right, in the style of the LISP programming language.
+Specifically, the addition function (+) is executed with the variable <i>x</i>
+and the constant value 1 as its two arguments. Then, the two-argument
+subtraction function (–) is executed. Its first argument is the value returned
+by the just-executed addition function. Its second argument is the constant
+value 0. The overall result of executing the entire program tree is thus <i
+style='mso-bidi-font-style:normal'>x</i>+1. </p>
+
+<p>The first program (figure 1<span style='color:black'>a) </span>was
+constructed by first choosing the subtraction function for the root (top point)
+of the program tree. The random construction process continued in a depth-first
+fashion (from left to right) and chose the addition function to be the first
+argument of the subtraction function. The random construction process then
+chose the terminal <i>x</i> to be the first argument of the addition function
+(thereby terminating the growth of this path in the program tree). The random
+construction process then chose the constant terminal 1 as the second argument
+of the addition function (thereby terminating the growth along this path).
+Finally, the random construction process chose the constant terminal 0 as the
+second argument of the subtraction function (thereby terminating the entire
+construction process). </p>
+
+<p>The second program (figure 1<span style='color:black'>b</span>) adds the
+constant terminal 1 to the result of multiplying <i>x</i> by <i>x</i> and is
+equivalent to <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+1. The
+third program (figure 1c) adds the constant terminal 2 to the constant terminal
+0 and is equivalent<b> </b>to the constant value 2. The fourth program (figure
+1d) is equivalent to <i style='mso-bidi-font-style:normal'>x</i>. </p>
+
+<p>Randomly created computer programs will, of course, typically be very poor
+at solving the problem at hand. However, even in a population of randomly
+created programs, some programs are better than others. The four random
+individuals from generation 0 in figure 1 produce outputs that deviate from the
+output produced by the target quadratic function <i style='mso-bidi-font-style:
+normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:normal'>x</i>+1 by
+different amounts. In this contrived illustrative problem, fitness can be
+graphically illustrated as the area between two curves. That is, fitness is
+equal to the area between the parabola <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>x</i>+1 and the curve representing the
+candidate individual. Figure 2 shows (as shaded areas) the integral of the
+absolute value of the errors between each of the four individuals in figure 1
+and the target quadratic function <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>x</i>+1. The integral of absolute error for
+the straight line <i style='mso-bidi-font-style:normal'>x</i>+1 (the first
+individual) is 0.67 (figure 2a). The integral of absolute error for the
+parabola <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+1 (the second
+individual) is 1.0 (figure 2b). The integral of the absolute errors for the
+remaining two individuals are 1.67 (figure 2c) and 2.67 (figure 2d),
+respectively. </p>
+
+<p>As can be seen in figure 2, the straight line <i style='mso-bidi-font-style:
+normal'>x</i>+1 (figure 2a) is closer to the parabola <i style='mso-bidi-font-style:
+normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:normal'>x</i>+1 in the
+range from –1 to +1 than any of its three cohorts in the population. This
+straight line is, of course, not equivalent to the parabola <i
+style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:
+normal'>x</i>+1. This best-of-generation individual from generation 0 is not
+even a quadratic function. It is merely the best candidate that happened to
+emerge from the blind random search of generation 0. In the valley of the
+blind, the one-eyed man is king. </p>
+
+<p>After the fitness of each individual in the population is ascertained,
+genetic programming then probabilistically selects relatively more fit programs
+from the population. The genetic operations are applied to the selected
+individuals to create offspring programs. The most commonly employed methods
+for selecting individuals to participate in the genetic operations are
+tournament selection and fitness-proportionate selection. In both methods, the
+emphasis is on selecting relatively fit individuals. An important feature
+common to both methods is that the selection is not greedy. Individuals that
+are known to be inferior will be selected to a certain degree. The best
+individual in the population is not guaranteed to be selected. Moreover, the
+worst individual in the population will not necessarily be excluded. Anything
+can happen and nothing is guaranteed. </p>
+
+<p class=MsoNormal>We first perform the reproduction operation. Because the
+first individual (figure 2.2a) is the most fit individual in the population, it
+is very likely to be selected to participate in a genetic operation. Let’s
+suppose that this particular individual is, in fact, selected for reproduction.
+If so, it is copied, without alteration, into the next generation (generation
+1). It is shown in figure 2.4a as part of the population of the new generation.</p>
+
+<p>We next perform the mutation operation. Because selection is probabilistic,
+it is possible that the third best individual in the population (figure 1c) is
+selected. One of the three points of this individual is then randomly picked as
+the site for the mutation. In this example, the constant terminal 2 is picked
+as the mutation site. This program is then randomly mutated by deleting the
+entire subtree rooted at the picked point (in this case, just the constant
+terminal 2) and inserting a subtree that is randomly grown in the same way that
+the individuals of the initial random population were originally created. In
+this particular instance, the randomly grown subtree (shown in figure 3b)
+computes the quotient of <i>x</i> and <i>x</i> using the protected division
+operation %. This particular mutation changes the original individual from one
+having a constant value of 2 into one having a constant value of 1. This
+particular mutation improves fitness from 1.67 to 1.00. </p>
+
+<p>Finally, we perform the crossover operation. Because the first and second
+individuals in generation 0 are both relatively fit, they are likely to be
+selected to participate in crossover. In fact, because of its high fitness, the
+first individual ends up being selected twice to participate in a genetic
+operation. In contrast, the unfit fourth individual is not be selected at all.
+The reselection of relatively more fit individuals and the exclusion and
+extinction of unfit individuals is a characteristic feature of Darwinian
+selection. The first and second programs are mated sexually to produce two
+offspring (using the two-offspring version of the crossover operation).<span
+style='color:black'> One point of the first parent (figure 1a), namely the +
+function, is randomly picked as the crossover point for the first parent. One
+point of the second parent (figure 1b), namely its leftmost terminal <i>x</i>,
+is randomly picked as the crossover point for the second parent. The crossover
+operation is then performed on the two parents. The two offspring are shown in
+figures 3c and 3d. One of the offspring (figure 3c) is equivalent to <i
+style='mso-bidi-font-style:normal'>x</i> and is not noteworthy. However, the
+other offspring (figure 3d) is equivalent to <i style='mso-bidi-font-style:
+normal'>x</i><sup>2</sup>+<i style='mso-bidi-font-style:normal'>x</i>+1 and has
+a fitness (integral of absolute errors) of zero. Because the fitness of this
+individual is below 0.01, the termination criterion for the run is satisfied
+and the run is automatically terminated. This best-so-far individual (figure
+3d) i</span>s designated as the result of the run. This individual is an
+algebraically correct solution to the problem. </p>
+
+<p>Note that the best-of-run individual <span style='color:black'>(figure 3d) </span>incorporates
+a good trait (the quadratic term <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>)
+from the second parent (figure 1b) with two other good traits (the linear term <i
+style='mso-bidi-font-style:normal'>x</i> and constant term of 1) from the first
+parent (figure 1a). The crossover operation produced a solution to this problem
+by recombining good traits from these two relatively fit parents into a
+superior (indeed, perfect) offspring. In summary, genetic programming has, in
+this example, automatically created a computer program whose output is equal to
+the values of the quadratic polynomial <i style='mso-bidi-font-style:normal'>x</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>x</i>+1 in the range from –1 to +1. </p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p><b><span style='font-family:Symbol'>·</span> </b>The home page of Genetic
+Programming Inc. at <a href="http://www.genetic-programming.com/"><b>www.genetic-programming.com</b></a>.
+</p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>For information about the
+field of genetic programming in general, visit <a
+href="http://www.genetic-programming.org/"><b>www.genetic-programming.org</b></a>
+</p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>The home page of<b> </b><a
+href="http://www.genetic-programming.com/johnkoza.html"><b>John R. Koza at
+Genetic Programming Inc.</b></a> (including online versions of most papers) and
+the home page of<b> </b><a href="http://smi.stanford.edu/~koza/"><b>John R.
+Koza at Stanford University </b></a></p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>Information about the 1992
+book <b><i><a href="http://www.genetic-programming.org/gpbook1toc.html">Genetic
+Programming: On the Programming of Computers by Means of Natural Selection</a></i></b>,
+the 1994 book <a href="http://www.genetic-programming.org/gpbook2toc.html"><b><i>Genetic
+Programming II: Automatic Discovery of Reusable Programs</i></b></a>, the 1999
+book <a href="http://www.genetic-programming.org/gpbook3toc.html"><b><i>Genetic
+Programming III: Darwinian Invention and Problem Solving</i></b></a>, and the
+2003 book <b><i><a href="http://www.genetic-programming.org/gpbook4toc.html">Genetic
+Programming IV<span style='font-style:normal'>: </span>Routine Human-Competitive
+Machine Intelligence</a></i></b>. Click here to read <b><a
+href="http://www.genetic-programming.org/gp4chapter1.pdf">chapter 1 of <i>Genetic
+Programming IV</i> book in PDF format.<span style='font-weight:normal'> </span></a></b></p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>For information on 3,198
+papers (many on-line) on genetic programming (as of June 27, 2003) by over 900
+authors, see <b><a
+href="http://liinwww.ira.uka.de/bibliography/Ai/genetic.programming.html">William
+Langdon’s bibliography on genetic programming</a></b>. <span style='font-family:
+Times'><o:p></o:p></span></p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>For information on the <b><a
+href="http://www.kluweronline.com/issn/1389-2576">Genetic Programming and
+Evolvable Machines journal</a> </b>published by Kluwer Academic Publishers</p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>For information on the
+Genetic Programming book series from Kluwer Academic Publishers, see the <a
+href="gpkluwer.html"><b>Call For Book Proposals</b></a> </p>
+
+<p><b><span style='font-family:Symbol'>·</span> </b>For information about the
+annual <b><a href="http://www-illigal.ge.uiuc.edu:8080/GECCO-2004/">Genetic and
+Evolutionary Computation (GECCO) conference</a></b> (which includes the annual
+GP conference) to be held on June 26–30, 2004 (Saturday – Wednesday) in Seattle
+and its sponsoring organization, the International Society for Genetic and
+Evolutionary Computation (<a href="http://www.isgec.org/"><b>ISGEC</b></a>).<b>
+</b>For information about the annual <b><a
+href="http://ehw.jpl.nasa.gov/events/nasaeh04/">NASA/DoD Conference on
+Evolvable Hardware Conference (EH)</a></b> to be held on June 24-26
+(Thursday-Saturday), 2004 in Seattle.<b> </b>For information about the annual <b><a
+href="http://evonet.dcs.napier.ac.uk/eurogp2004/">Euro-Genetic-Programming
+Conference</a></b> to be held on April 5-7, 2004 (Monday – Wednesday) at the
+University of Coimbra in Coimbra Portugal.<b> <o:p></o:p></b></p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<p>Last updated on August 27, 2003</p>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
